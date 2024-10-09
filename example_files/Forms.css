@@ -1,0 +1,294 @@
+/*
+    Created on : Mar 18, 2016, 8:26:44 PM
+    Author     : Vladimir A. Pshenkin <vladimir at pshenkin.net>
+*/
+
+.DC2_Form input[type="text"] {
+    width:100%;
+    padding: .2em;
+    font-size: 1.1em;
+}
+
+.DC2_Form textarea {
+    width:100%;
+    padding: .3em;
+    font-size: 1.3em;
+    min-height:5em;
+}
+
+/*
+span.DC2Required:after {
+    color: #dc143c;
+    content: "*";
+    font-weight: bold;
+    padding-left: 0.2em;
+    position: relative;
+    text-align: right;
+    top: -0.4em;
+    font-size: 110%;
+}
+ */
+
+.DC2_Form select {
+    margin: 3px 5px 3px 0;
+    width: 100%;
+}
+
+.DC2_Form input[type="button"],
+.DC2_Form input[type="submit"],
+.DC2_Form input[type="reset"],
+.DC2_Form select,
+.DC2_Form input[type="checkbox"],
+.DC2_Form input[type="file"]
+{
+    font-size: 1.1em;
+}
+
+.DC2_Form input[type="file"]
+{
+    font-size: 1em;
+}
+
+
+.centered {
+    text-align:center;
+}
+
+.DC2FormsDialogTable {
+    width:100%;
+    margin:2rem 0;
+}
+
+.DC2FormsHidden {
+    display: none!important;
+}
+.DC2FormsInline {
+    display: block;
+}
+
+.DC2FormsFieldSet {
+    margin: 0;
+    width:100%;
+    padding: .5rem;
+}
+
+.DC2FormsFieldSet:nth-child(odd) {background: #f7f7f7;}
+/* .DC2FormsFieldSet:nth-child(even) {background: #ffffff;} */
+
+.DC2FormsFieldSet:hover { background-color: #d2e8ff; }
+
+.DC2FormsLabelColumn {
+    width: 25%;
+    padding: 0 1rem 0 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.DC2FormsDataColumn {
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DC2FormsDataColumn li {
+    padding: 0 1rem 0 0;
+    border: 1px dotted transparent;
+}
+
+.DC2FormsDataColumn li:hover {
+    border: 1px dotted #aaa;
+}
+
+.DC2FormFieldHeader {
+    margin-bottom: .5rem;
+}
+
+.DC2FormFieldFooter {
+    margin-top: .5rem;
+}
+
+.DC2FormsSubmitControls {
+    padding: 1em 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.DC2_DateBox {
+    display: inline-block;
+}
+
+.DC2FormsSubmitControls input {
+    margin: 0 .5em;
+}
+
+.DC2Forms_ErrorField{
+    border: 1px solid crimson;  
+}
+
+.DC2Forms_ErrorBox{
+    padding: 1em;
+    margin: -.5em 0 0 0;
+    width: 100%;
+    
+    border-top: 0px solid #777;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    border-bottom: 1px solid #777;
+    border-radius: 0 0 .5em .5em;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+0,c6deff+100 */
+    background: #1e5799; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M2ZGVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #1e5799 0%, #ffffff 0%, #c6deff 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#ffffff), color-stop(100%,#c6deff)); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#ffffff 0%,#c6deff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  #1e5799 0%,#ffffff 0%,#c6deff 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  #1e5799 0%,#ffffff 0%,#c6deff 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  #1e5799 0%,#ffffff 0%,#c6deff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#c6deff',GradientType=0 ); /* IE6-8 */
+
+}
+
+
+.DC2FormsControlsColumn {
+    width: 5%;
+}
+
+.DC2FormsAddRow {
+    text-align: left;
+}
+
+.DC2FormsRemoveRow {
+    text-align: center;
+}
+
+.DC2FormsDataColumn table {
+    border-collapse: collapse;
+    width:100%;
+
+}
+
+.DC2FormsDataColumn table th{
+    text-align: left;
+}
+
+.DC2FormsDataColumn table td,
+.DC2FormsDataColumn table th
+{
+    padding: .3em;
+}
+
+.TextButtonPlus{
+    color: #00A000 !important;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    content: '+';
+}
+
+.TextButtonMinus{
+    color: crimson !important;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    content: '-';
+}
+
+
+.Tokenize ul.TokensContainer li.Token span span.TokenDescription {
+    display:none;
+}
+
+
+.dc2grid,
+.tbl {
+    display: table;
+    width: 100%;
+}
+
+.tr {
+    display: table-row;
+}
+.td {
+    display: table-cell;
+    padding: .2em;
+    vertical-align: top;
+}
+.th {
+    text-align: center;
+    font-weight: bold;
+    padding: .2em;
+    vertical-align: top;
+}
+
+.feildname {
+    display:none;
+}
+
+.dc2grid .tr:first-child {
+    display: table-row;
+}
+
+.dc2grid .title {
+    display:none;
+}
+
+
+.DC2FormsSubmitControls .g-recaptcha {
+    flex-basis: 25%;
+}
+
+.DC2FormsSubmitControls input {
+    flex-basis: 25%;
+}
+
+@media screen and (max-width:760px) {
+    .DC2FormsFieldSet {
+        display: block;
+    }
+
+    .DC2FormsLabelColumn {
+        width: 100%!important;
+        padding: 0 0 .3em 0;
+    }
+
+    .DC2FormsDataColumn {
+        width: 100%!important;
+        float: none;
+        padding:  0;
+    }
+
+    .DC2FormsSubmitControls .g-recaptcha {
+        flex-basis: 100%!important;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .DC2FormsSubmitControls input {
+        flex-basis: 45%;
+        margin:0 .5em;
+    }
+
+    .feildname {
+        display:block;
+    }
+
+    .dc2grid .tr:first-child {
+        display: none;
+    }
+
+    .dc2grid .title,
+    .dc2grid .td,
+    .dc2grid .th
+    {
+        display:block;
+    }
+}
